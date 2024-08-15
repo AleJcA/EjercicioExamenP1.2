@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #6C63FF;
+    --secondary-color: #ff8aa2;
+    --background-color: #F8F9FA;
+    --text-color: #343A40;
+    --hover-color: #F3F4F6;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+    color: #FFF !important;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+ 
+.card {
+    height: 100%;
+    max-width: 300px;
+    margin: auto;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.9;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    background-color: var(--hover-color);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text.descripcion {
+    max-height: 3.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.card-title {
+    max-height: 2.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
